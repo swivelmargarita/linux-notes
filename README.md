@@ -31,6 +31,23 @@ find . -type f -[i]name '*.txt' -exec grep -q 'hello' {} ';'
 ### References
 - https://unix.stackexchange.com/questions/389705/understanding-the-exec-option-of-find/389706#389706
 
+## Pacman
+### Find files installed by a package
+```bash
+$ pacman -Ql pacman|grep /usr/bin/
+pacman /usr/bin/makepkg
+pacman /usr/bin/makepkg-template
+pacman /usr/bin/pacman
+pacman /usr/bin/pacman-conf
+pacman /usr/bin/pacman-db-upgrade
+pacman /usr/bin/pacman-key
+pacman /usr/bin/repo-add
+pacman /usr/bin/repo-elephant
+pacman /usr/bin/repo-remove
+pacman /usr/bin/testpkg
+pacman /usr/bin/vercmp
+```
+
 ## Awk
 
 ## Sed
